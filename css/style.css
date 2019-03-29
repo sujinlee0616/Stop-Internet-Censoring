@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+
+.title{color: #3375de; font-size: 55px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+margin: 35px 0;}
+.subtitle{color: #424549; font-size: 28px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700; margin: 35px 0;}
+.desc{color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400;}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* Navigation */
+    .navbar{width: 100%; height: 100px; background-color: #ffffff;}
+
+    .gnb{position: relative; width: 1455px; margin: 0 auto;}
+    .gnb_logo, .logo_desc, .gnb_menu, .menu{display: inline-block;}
+    .logo{position: relative; top: 5px;}
+    .logo_desc{
+        color: #3375de; font-size: 17px; font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif; font-weight:700; letter-spacing:0.025em;
+        line-height: 20px;
+        width: 120px; height: 60px;
+        position: relative; top: -6px; left: 6px;}
+
+    .gnb_menu{position: absolute; right: 0; top: 43px;}
+    .menu{
+        color: #424549; font-size: 20px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; 
+        letter-spacing: 0.05rem;
+        position: relative; top: -14px; left: 6px;
+        padding: 10px; margin: 0 12px;}
+    .share_btn{color: #3375DE; border: 2px solid #3375DE; }
+    .lang_btn{display: inline-block;}
+    .menu img{width: 32px; height: 32px;}
+    .gnb_menu a{text-decoration: none;}
+
+
+    /* Contents */
+    .wrap{width: 100%; background-color: #f5f4f4;}
+    .contents_wrap{width: 1455px; background-color: #ffffff; margin: 0 auto;}
+    .text_wrap{width: 1080px; margin: 0 auto;}
+
+    
+
+
+}
