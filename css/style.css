@@ -57,12 +57,18 @@ a.linemap{text-decoration: none;}
     .text_wrap{width: 1080px; margin: 0 auto;}
     .graph_img{margin: 20px auto;}
 
-    .committee_list{width: 1080px; margin: 20px auto;
-    text-align: center; }
+    .committee_list{width: 1080px; margin: 30px auto 80px; text-align: center; }
     .committee_list {border: 1px solid #B0B0BB;}
-  
+    .committee_list th{background-color: #3375DE; color: #ffffff; height: 63px; vertical-align: middle;}
+    .committee_list td{height: 20px; background-color: orange;}
 
-    .committee_list th{background-color: #3375DE; color: #ffffff; height: 63px;}
+    .sponsor_logo{width: 300px; height: 180px;
+        position: relative; display: inline-block;}
+    /* .sponsor_logo:nth-child(2){background-color: red;} */
+    .sponsor_logo:nth-child(3){margin-left: 85px;}
+    .sponsor_logo:nth-child(4){margin-left: 85px;}
+
+
 
 
 
