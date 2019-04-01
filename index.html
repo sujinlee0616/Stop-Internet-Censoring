@@ -20,13 +20,13 @@
                 </div>
             </div>
             <div class="gnb_menu">
-                <a href="#">
+                <a class="nav-item nav-link smooth" href="#about">
                     <div class="menu">About</div>
                 </a>
-                <a href="#">
+                <a class="nav-item nav-link smooth" href="#take_action">
                     <div class="menu">Take Action</div>
                 </a>
-                <a href="#">
+                <a class="nav-item nav-link smooth" href="#sponsors">
                     <div class="menu">Sponsors</div>
                 </a>
                 <a href="#">
@@ -49,13 +49,13 @@
             </div>
             <div class="text_wrap">
                 <div class="text_menu">
-                    <a class="linemap" href="#">Proposed Bill &gt;</a>
-                    <a class="linemap" href="#">Infringement of Basic Rights &gt;</a>
-                    <a class="linemap" href="#">Bill Supporters &gt;</a>
-                    <a class="linemap" href="#">Lack of Fairness and Legitimacy &gt;</a>
-                    <a class="linemap" href="#">Take Action</a>
+                    <a class="linemap nav-item nav-link smooth" href="#bill">Proposed Bill &gt;</a>
+                    <a class="linemap nav-item nav-link smooth" href="#rights">Infringement of Basic Rights &gt;</a>
+                    <a class="linemap nav-item nav-link smooth" href="#supporters">Bill Supporters &gt;</a>
+                    <a class="linemap nav-item nav-link smooth" href="#lack">Lack of Fairness and Legitimacy &gt;</a>
+                    <a class="linemap nav-item nav-link smooth" href="#take_action">Take Action</a>
                 </div>
-                <div class="title">Stop Internet Censoring</div>
+                <div class="title" id="about">Stop Internet Censoring</div>
                 <div class="desc">
                     <b>We have seen many attempts to censor the Internet under the pretext of copyright protection.</b>
                     Notorious attempts are SOPA and PIPA of 2012, which triggered the largest online protest in history and was
@@ -67,7 +67,7 @@
                     drive to block &quot;https&quot; traffic by SNI eavesdropping (See, press release of Korea Communication
                     Commission on February 12, 2019 and press release of MCST on May 2, 2018, both in Korean).
                 </div>
-                <div class="subtitle">Proposed Bill to Block File Sharing Websites</div>
+                <div class="subtitle" id="bill">Proposed Bill to Block File Sharing Websites</div>
                 <div class="desc">
                     According to the proposed bill, the Minister of Culture, Sports and Tourism (MCST) may order internet
                     connection service providers, or ISPs, to block users&apos; access to foreign websites that allow
@@ -83,7 +83,7 @@
                     and violating social norms, including those violating others&apos; copyright. But the proposed bill is new
                     in that the copyright protection agency holds a power to block website access.
                 </div>
-                <div class="subtitle">Infringement of basic rights</div>
+                <div class="subtitle" id="rights">Infringement of basic rights</div>
                 <div class="desc">
                     The bill is more harmful than SOPA and PIPA that provoked an internet blackout in January 2012 because the
                     blocking can be implemented by an administrative decision without prior judicial review. Besides, the
@@ -100,7 +100,7 @@
                     combat piracy &quot;could result in restrictions that are not compatible with the right to freedom of
                     expression and the right to science and culture.&quot; (A/HRC/28/57, para 51)
                 </div>
-                <div class="subtitle">Who Supports the Bill and Why?</div>
+                <div class="subtitle" id="supporters">Who Supports the Bill and Why?</div>
                 <div class="desc">
                     Copyright holders, especially web-based cartoon creators vehemently support the bill. They are backed by
                     copyright bureaus such as MCST and KCoPA who want to strengthen their own authorities. Webcomic writers have
@@ -120,7 +120,7 @@
                     reporting and examination procedures for blocking decisions, implying a weakened procedural fairness.
                     <img class="graph_img" src="images/graph.png" alt="Graph about KCSC Blocking Decisions Against Foreign Pirate Websites">
                 </div>
-                <div class="subtitle">Lack of Fairness and Legitimacy</div>
+                <div class="subtitle" id="lack">Lack of Fairness and Legitimacy</div>
                 <div class="desc">
                     The copyright protection agency, i.e., KCoPA, is not a proper body to hold a power of website blocking as designed by the bill. <br>
                     
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="subtitle">Take Action</div>
+                <div class="subtitle" id="take_action">Take Action</div>
                 <div class="desc">
                     Are you against this idea? Send message to members of Legislation & Judiciary committee. <br>
                     <div class="part_desc">
@@ -226,7 +226,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="subtitle">Sponsors</div>
+                <div class="subtitle" id="sponsors">Sponsors</div>
                 <div class="desc">
                     This website is sponsored by the Commons Foundation, Jinbonet, and Opennet.<br>
                     <div class="sponsor_logo">
@@ -272,6 +272,25 @@
         </div>
         
     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script>
+        /* Smooth scroll */
+        $("a.smooth").on('click', function (e) {
+            if (this.hash !== "") {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 120
+                }, 800);
+            }
+            e.preventDefault();
+        });
+    </script>
 
 </body>
 </html>
