@@ -56,14 +56,14 @@ a.linemap{text-decoration: none;}
     .contents_wrap{width: 1455px; background-color: #ffffff; margin: 0 auto; padding-bottom: 100px; }
     .text_wrap{width: 1080px; margin: 0 auto;}
     .graph_img{margin: 20px auto;}
-    .committee_list{margin: 20px auto;}
 
-    .committee_list, .committee_list th, .committee_list td {
-        cell-paddi
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    .committee_list th{background-color: #3375DE; color: #ffffff;}
+    .committee_list{width: 1080px; margin: 20px auto;
+    text-align: center; }
+    .committee_list {border: 1px solid #B0B0BB;}
+  
+
+    .committee_list th{background-color: #3375DE; color: #ffffff; height: 63px;}
+
 
 
     /* Footer */
