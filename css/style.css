@@ -13,21 +13,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
 
-/* Buttons */
-.btn {
-border: 2px solid transparent;
-}
-.btn.btn-outline-primary {
-  border-color: #007bff;
-  color: #007bff !important;
-}
-.btn.btn-outline-primary:hover,
-.btn.btn.btn-outline-primary:active,
-.btn.btn.btn-outline-primary:focus {
-  color: #ffffff !important;
-  box-shadow: 2px 2px 5px #a7a7a7;
-}
-
 /* Navbar */
 .navbar {
   box-shadow: 0px -1px 8px 2px #a7a7a7;
@@ -47,19 +32,63 @@ a#navLinkLang.nav-link.dropdown-toggle::after {
 .nav-item:last-of-type a.nav-link {
   padding-right: 0;
 }
+.nav-link{
+   color: #424549 !important; font-size: 20px !important; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; font-weight:700; 
+   letter-spacing: 0.05rem ; 
+}
+
+/* Navbar Buttons */
+.btn {
+border: 2px solid transparent;
+}
+.btn.btn-outline-primary {
+  border-color: #3375DE;
+  color: #3375DE !important;
+}
+.btn.btn-outline-primary:hover,
+.btn.btn.btn-outline-primary:active,
+.btn.btn.btn-outline-primary:focus {
+  color: #ffffff !important;
+  background-color: #3375DE !important;
+}
+
 
 /* Breadcrumbs */
 .breadcrumb {
   padding: 1rem 0rem;
   background-color: transparent;
 }
+.breadcrumb-item a {
+  color: #BEBEBE; font-size: 20px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; margin-top: 40px;
+  text-decoration: none;
+}
 .breadcrumb-item+.breadcrumb-item::before {
   content: '>';
+  color: #BEBEBE; font-size: 20px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; 
+}
+.breadcrumb-item a:hover, .breadcrumb-item a:active, .breadcrumb-item a:focus {
+  color: #000000;
 }
 
+
+
+/* Contents */
+h1.display-4{color: #3375DE; font-size: 55px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+margin: 35px 0;}
+.lead, .table{color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; line-height: 26px;}
+.subtitle{color: #424549; font-size: 28px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700; margin: 35px 0;}
+.howto{color: #3375de; font-size: 22px; 
+        font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+        margin: 30px 0 30px 20px;}
+
+
 /* Lists */
+.lof-list, .ta-list{
+  color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; line-height: 26px;
+}
 ul.lof-list {
   list-style: none;
+  margin-left: 20px;
 }
 ul.lof-list li {
   position: relative;
@@ -81,6 +110,7 @@ ol.ta-list {
   position: relative;
   list-style: none;
   counter-reset: item;
+  margin-left: 25px;
 }
 ol.ta-list li {
   counter-increment: item;
@@ -102,6 +132,7 @@ ol.ta-list li:before {
   text-align: center;
 }
 
+/* table */
 .table .thead-dark th {
   background-color: #3375de;
   border-color: #3375de;
@@ -109,6 +140,16 @@ ol.ta-list li:before {
 a.no-deco {
   text-decoration: none !important;
 }
+
+/* Sponsors */
+.sponsor_logo img{width: 250px; height: auto;}
+
+/* Footer*/
+.sns_icon{display: inline; width: 40px; height: 40px; margin: 0 5px;}
+
+
+
+
 
 @media (min-width: 0px) {}
 @media (min-width: 576px) {}
