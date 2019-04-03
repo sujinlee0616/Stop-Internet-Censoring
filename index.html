@@ -9,25 +9,25 @@
     <meta name="description" content="" />
     <meta name="image" content="./images/meta.jpg" />
 
-    <link rel="canonical" href="https://microbitcoin.org/" />
+    <link rel="canonical" href="https://stopinternetcensoring.org/">
 
-    <meta itemprop="name" content="Stop Internet Censoring" />
-    <meta itemprop="description" content="" />
+    <meta itemprop="name" content="Stop Internet Censoring">
+    <meta itemprop="description" content="">
     <meta itemprop="image" content="./images/meta.jpg" />
 
-    <meta property="og:url" content="https://microbitcoin.org/" />
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stopinternetcensoring.org/">
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Stop Internet Censoring" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="./images/meta.jpg" />
-    <meta property="og:image:alt" content="Stop Internet Censoring" />
-    <meta property="og:site_name" content="Stop Internet Censoring" />
+    <meta property="og:image:alt" content="Stop Internet Censoring">
+    <meta property="og:site_name" content="Stop Internet Censoring">
     <meta property="fb:app_id" content="" />
 
-    <meta name="twitter:card" content="website" />
-    <meta name="twitter:site" content="@" />
-    <meta name="twitter:title" content="Stop Internet Censoring" />
-    <meta name="twitter:description" content="" />
+    <meta name="twitter:card" content="website"/>
+    <meta name="twitter:site" content="@"/>
+    <meta name="twitter:title" content="Stop Internet Censoring"/>
+    <meta name="twitter:description" content=""/>
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:image" content="./images/meta.jpg" />
 
@@ -53,7 +53,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-center ml-auto">
               <li class="nav-item">
-                <a class="nav-link smooth" href="#about">About</a>
+                <a class="nav-link smooth" href="index.html/#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link smooth" href="#take_action">Take Action</a>
@@ -197,6 +197,7 @@
             </ul>
           </p>
         </section>
+        
 
         <section class="mb-5" id="take_action">
           <h2 class="subtitle">Take Action</h2>
@@ -455,12 +456,11 @@
         _output += '<td>' + role + '</td>';
         _output += '<td>' + name + '</td>';
         _output += '<td>' + party + '</td>';
-        _output += '<td><a class="no-deco" href=' + fb + '>ICON</a></td>';
-        _output += '<td><a class="no-deco" href=' + bl + '>ICON</a></td>';
-        _output += '<td><a class="no-deco" href=' + tw + '>ICON</a></td>';
-        _output += '<td><a class="no-deco" href=' + yt + '>ICON</a></td>';
+        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + fb + '><img src="images/tb_sns_1_fb.png" alt="Facebook link of a committee member"></a></td>';
+        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + bl + '><img src="images/tb_sns_2_blog.png" alt="Blog link of a committee member"></a></td>';
+        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + tw + '><img src="images/tb_sns_3_tw.png" alt="Twitter link of a committee member"></a></td>';
+        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + yt + '><img src="images/tb_sns_4_youtube.png" alt="Youtube link of a committee member"></a></td>';
         _output += '</tr>';
-
         return _output;
       }
 
@@ -474,10 +474,9 @@
       
     </script>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Smooth Scroll -->
     <script>
-        /* Smooth scroll */
         $("a.smooth").on('click', function (e) {
             if (this.hash !== "") {
                 e.preventDefault();
