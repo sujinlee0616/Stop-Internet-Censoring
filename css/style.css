@@ -75,7 +75,8 @@ border: 2px solid transparent;
 /* Contents */
 h1.display-4{color: #3375DE; font-size: 55px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
 margin: 35px 0;}
-.lead, .table{color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; line-height: 26px;}
+.lead, .table, .lof-list, .ta-list{color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; line-height: 26px;}
+.lead a, .table a, .lof-list a, .ta-list a{color: #3375DE;}
 .subtitle{color: #424549; font-size: 28px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700; margin: 35px 0;}
 .howto{color: #3375de; font-size: 22px; 
         font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
@@ -83,9 +84,6 @@ margin: 35px 0;}
 
 
 /* Lists */
-.lof-list, .ta-list{
-  color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; line-height: 26px;
-}
 ul.lof-list {
   list-style: none;
   margin-left: 20px;
