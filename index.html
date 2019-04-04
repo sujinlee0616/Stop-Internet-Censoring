@@ -237,17 +237,23 @@
         <section class="pb-5" id="sponsors">
           <h2 class="subtitle">Sponsors</h2>
           <p class="lead">
-            This website is sponsored by the Commons Foundation, Jinbonet, and Opennet.<br>
-            <div class="d-flex justify-content-between">
+            This website is sponsored by the Commons Foundation, Jinbonet, and Opennet.
+            <div class="row">
+              <div class="col-md-4 text-center">
                 <a href="https://commons.foundation/" target="_blank">
-                    <img src="images/sponsor1_commonsfoudnation.png" alt="Sposor logo - Commons Foundation">
+                  <img src="images/sponsor1_commonsfoudnation.png" alt="Sposor logo - Commons Foundation">
                 </a>
+              </div>
+              <div class="col-md-4 text-center">
                 <a href="https://www.jinbo.net/" target="_blank">
-                    <img src="images/sponsor2_jinbonet.png" alt="Sposor logo - Jinbonet">
+                  <img src="images/sponsor2_jinbonet.png" alt="Sposor logo - Jinbonet">
                 </a>
-                <a href="https://opennet.or.kr/" target="_blank">
-                    <img src="images/sponsor3_opennet.png" alt="Sposor logo - Opennet">
+              </div>
+              <div class="col-md-4 text-center">
+                <a href="https://www.jinbo.net/" target="_blank">
+                  <img src="images/sponsor3_opennet.png" alt="Sposor logo - Jinbonet">
                 </a>
+              </div>
             </div>
 
           </p>
@@ -260,24 +266,26 @@
 
     <!-- footer -->
     <div class="footer py-5 bg-dark text-white d-flex">
-      <div class="container justify-content-between">
+      <div class="container d-flex flex-row justify-content-between">
         <div>
           SPONSORED BY COMMONS FOUNDATION, JINBONET, and OPENNET.
         </div>
         <div class="share_via footer_font">
           SHARE VIA
-          <div class="sns_icon">
+          <div class="sns_icon" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https%3A//stopinternetcensoring.org/&title=Stop%20Internet%20Censoring','popUpWindow','width=580, height=500, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
             <img src="images/sns_1_fb.png" alt="Facebook share icon">
           </div>
-          <div class="sns_icon">
+          <div class="sns_icon" onclick="window.open('http://twitter.com/intent/tweet?status=Stop%20Internet%20Censoring%20%23Internet%5FFreedom%20%23Stop%5FInternet%5FCensoring%20%23https%5Fblock+https%3A//stopinternetcensoring.org/','popUpWindow','width=500, height=300, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
             <img src="images/sns_2_twitter.png" alt="Twitter share icon">
           </div>
-          <div class="sns_icon">
+          <div class="sns_icon" id="copy_url">            
             <img src="images/sns_3_url.png" alt="Url copy icon">
           </div>
         </div>
       </div>
     </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -456,10 +464,10 @@
         _output += '<td>' + role + '</td>';
         _output += '<td>' + name + '</td>';
         _output += '<td>' + party + '</td>';
-        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + fb + '><img src="images/tb_sns_1_fb.png" alt="Facebook link of a committee member"></a></td>';
-        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + bl + '><img src="images/tb_sns_2_blog.png" alt="Blog link of a committee member"></a></td>';
-        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + tw + '><img src="images/tb_sns_3_tw.png" alt="Twitter link of a committee member"></a></td>';
-        _output += '<td><a class="no-deco tb_sns" target="_blank" href=' + yt + '><img src="images/tb_sns_4_youtube.png" alt="Youtube link of a committee member"></a></td>';
+        _output += fb !== '' ? '<td><a class="no-deco tb_sns" target="_blank" href=' + fb + '><img src="images/tb_sns_1_fb.png" alt="Facebook link of a committee member"></a></td>' : '<td></td>';
+        _output += bl !== '' ? '<td><a class="no-deco tb_sns" target="_blank" href=' + bl + '><img src="images/tb_sns_2_blog.png" alt="Blog link of a committee member"></a></td>' : '<td></td>';
+        _output += tw !== '' ? '<td><a class="no-deco tb_sns" target="_blank" href=' + tw + '><img src="images/tb_sns_3_tw.png" alt="Twitter link of a committee member"></a></td>' : '<td></td>';
+        _output += yt !== '' ? '<td><a class="no-deco tb_sns" target="_blank" href=' + yt + '><img src="images/tb_sns_4_youtube.png" alt="Youtube link of a committee member"></a></td>' : '<td></td>';
         _output += '</tr>';
         return _output;
       }
@@ -488,5 +496,23 @@
             e.preventDefault();
         });
     </script>
+    <!-- Copy url -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      function copyToClipboard(val) {
+        var t = document.createElement("textarea");
+        document.body.appendChild(t);
+        t.value = val;
+        t.select();
+        document.execCommand('copy');
+        document.body.removeChild(t);
+      }
+      $('#copy_url').click(function () {
+        copyToClipboard('https://stopinternetcensoring.org/');
+        alert('Copied url of this page!');
+      });
+    </script>
+
+
   </body>
 </html>

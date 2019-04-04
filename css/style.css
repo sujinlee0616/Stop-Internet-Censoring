@@ -143,11 +143,12 @@ a.no-deco {
 table .tb_sns img{width: 28px; height: 28px;}
 
 /* Sponsors */
-.sponsor_logo img{width: 250px; height: auto;}
+#sponsors img {width: 250px; margin: 20px 0;}
 
 /* Footer*/
 .sns_icon{display: inline; width: 40px; height: 40px; margin: 0 5px;}
-
+.sns_icon:hover{cursor: pointer;}
+.share_via a{text-decoration: none;}
 
 
 
