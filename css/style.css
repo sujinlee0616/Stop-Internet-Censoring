@@ -60,12 +60,12 @@ border: 2px solid transparent;
 }
 ol.breadcrumb{margin-top: 20px;}
 .breadcrumb-item a {
-  color: #BEBEBE; font-size: 20px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; 
-  text-decoration: none;
+  color: #BEBEBE; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; text-decoration: none;
+  font-size: 16px; 
 }
 .breadcrumb-item+.breadcrumb-item::before {
-  content: '>';
-  color: #BEBEBE; font-size: 20px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; 
+  content: '>'; color: #BEBEBE; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; 
+  font-size: 16px; 
 }
 .breadcrumb-item a:hover, .breadcrumb-item a:active, .breadcrumb-item a:focus {
   color: #000000;
@@ -74,14 +74,23 @@ ol.breadcrumb{margin-top: 20px;}
 
 
 /* Contents */
-h1.display-4{color: #3375DE; font-size: 50px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
-margin: 17px 0 25px 0;}
-.lead, .table, .lof-list, .ta-list{color: #424549; font-size: 19px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; line-height: 26px;}
+h1.display-4{
+  color: #3375DE; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+  font-size: 35px; margin: 17px 0 25px 0;}
+.lead, .table, .lof-list, .ta-list{
+  color: #424549; font-family: "Source Sans Pro", sans-serif; font-weight: 400; 
+  font-size: 18px; line-height: 26px;
+}
 .lead a, .table a, .lof-list a, .ta-list a{color: #3375DE;}
-.subtitle{color: #424549; font-size: 28px; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700; margin: 35px 0;}
-.howto{color: #3375de; font-size: 22px; 
-        font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
-        margin: 30px 0 30px 20px;}
+.subtitle{
+  color: #424549; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+  font-size: 20px;  margin: 30px 0;
+}
+.howto{
+  color: #3375de; font-size: 22px; 
+  font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+  margin: 30px 0 30px 20px;
+}
 
 
 /* Lists */
@@ -142,10 +151,22 @@ a.no-deco {
 }
 table .tb_sns img{width: 28px; height: 28px;}
 
+.table-responsive th:nth-child(1){width: 7%;}
+.table-responsive th:nth-child(2){width: 17%;}
+.table-responsive th:nth-child(3){width: 20%;}
+.table-responsive th:nth-child(4){width: 20%;} 
+.table-responsive th:nth-child(5){width: 9%;}
+.table-responsive th:nth-child(6){width: 9%;}
+.table-responsive th:nth-child(7){width: 9%;}
+.table-responsive th:nth-child(8){width: 9%;}
+
+
+
 /* Sponsors */
 #sponsors img {width: 250px; margin: 20px 0;}
 
 /* Footer*/
+.footer {display: block;}
 .sns_icon{display: inline; width: 40px; height: 40px; margin: 0 5px;}
 .sns_icon:hover{cursor: pointer;}
 .share_via a{text-decoration: none;}
@@ -153,19 +174,78 @@ table .tb_sns img{width: 28px; height: 28px;}
 
 
 
-@media (min-width: 0px) {}
-@media (min-width: 576px) {}
-@media (min-width: 768px) {}
+/* 위에 적는 CSS는 모바일 기준 */
+
+
+/* Layout */
+.wrap{padding: 0 25px 0 25px; }
+
+/* navigation */
+.navbar{height: 85px;} 
+.logo{width: 40%; height: 40%;}
+.rect{ width: 4px; height: 34px;
+  background-color: #B0B0BB;}
+
+.header_img{}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* 모바일에서... 리스트 사이즈...  */
+  ul.lof-list {margin-left: 0;}
+  .howto{margin-left: 0;}
+  ol.ta-list{margin-left: 0;}
+  .footer {display: none;}
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .navbar{height: 100px; height: auto;} 
+  
+}
+
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  /* Layout */
+  .container {max-width: 1460px;}
+
+  /* Contents */
+  h1.display-4{font-size: 50px; margin: 17px 0 25px 0;}
+  .lead, .table, .lof-list, .ta-list{font-size: 19px; line-height: 26px;}
+  .subtitle{font-size: 28px; margin: 35px 0;}
+  .howto{font-size: 22px; margin: 30px 0 30px 20px;}
+
+  .header_img{width: 100%;}
+
+  /* Navigation */
+  .logo{width: 100%; height: 100%; }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.75rem;
     padding-left: 1.75rem;
     font-size: 1.25rem;
     font-weight: bold;
   }
+
+  
+  /* Breadcrumbs */
+  ol.breadcrumb{margin-top: 20px;}
+  .breadcrumb-item a {font-size: 25px;}
+  .breadcrumb-item+.breadcrumb-item::before {font-size: 25px;}
+
+
+
 }
+
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+
+  /* Layout */
+  .wrap{padding: 0 170px 0 170px; }
+  
 }
+
