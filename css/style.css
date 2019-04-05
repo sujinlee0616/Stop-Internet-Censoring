@@ -188,7 +188,9 @@ table .tb_sns img{width: 28px; height: 28px;}
 .sns_icon:hover{cursor: pointer;}
 .footer a{text-decoration: none;}
 
-
+dl.timeline {
+  font-size: larger;
+}
 
 /* 위에 적는 CSS는 모바일 기준 */
 
