@@ -184,7 +184,7 @@ table .tb_sns img{width: 28px; height: 28px;}
 /* Footer*/
 .footer {background-color: #424549; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; letter-spacing: 0.1em; 
   display: block; padding: 35px 0; font-size: 16px;}
-.sns_icon{display: inline; width: 40px; height: 40px; margin: 0 5px;}
+.sns_icon{display: inline; margin: 0 4px;}
 .sns_icon:hover{cursor: pointer;}
 .footer a{text-decoration: none;}
 
