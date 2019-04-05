@@ -89,14 +89,15 @@ h1.display-4{
 .howto{
   color: #3375de; font-size: 22px; 
   font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
-  margin: 30px 0 30px 20px;
+  margin: 30px 0 30px 0px;
 }
+
+
 
 
 /* Lists */
 ul.lof-list {
   list-style: none;
-  margin-left: 20px;
 }
 ul.lof-list li {
   position: relative;
@@ -114,11 +115,11 @@ ul.lof-list li::before {
   background-size: cover;
 }
 
+
 ol.ta-list {
   position: relative;
   list-style: none;
   counter-reset: item;
-  margin-left: 25px;
 }
 ol.ta-list li {
   counter-increment: item;
@@ -163,14 +164,14 @@ table .tb_sns img{width: 28px; height: 28px;}
 
 
 /* Sponsors */
-#sponsors img {width: 250px; margin: 20px 0;}
+#sponsors img {width: 250px; margin: 5px 0;}
 
 /* Footer*/
-.footer {display: block;}
+.footer {background-color: #424549; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; letter-spacing: 0.1em; 
+  display: block; padding: 35px 0; font-size: 16px;}
 .sns_icon{display: inline; width: 40px; height: 40px; margin: 0 5px;}
 .sns_icon:hover{cursor: pointer;}
-.share_via a{text-decoration: none;}
-
+.footer a{text-decoration: none;}
 
 
 
@@ -191,11 +192,7 @@ table .tb_sns img{width: 28px; height: 28px;}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* 모바일에서... 리스트 사이즈...  */
-  ul.lof-list {margin-left: 0;}
-  .howto{margin-left: 0;}
-  ol.ta-list{margin-left: 0;}
-  .footer {display: none;}
+  
 
 
 }
@@ -210,16 +207,12 @@ table .tb_sns img{width: 28px; height: 28px;}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+
+
+  
+
   /* Layout */
   .container {max-width: 1460px;}
-
-  /* Contents */
-  h1.display-4{font-size: 50px; margin: 17px 0 25px 0;}
-  .lead, .table, .lof-list, .ta-list{font-size: 19px; line-height: 26px;}
-  .subtitle{font-size: 28px; margin: 35px 0;}
-  .howto{font-size: 22px; margin: 30px 0 30px 20px;}
-
-  .header_img{width: 100%;}
 
   /* Navigation */
   .logo{width: 100%; height: 100%; }
@@ -231,11 +224,23 @@ table .tb_sns img{width: 28px; height: 28px;}
     font-weight: bold;
   }
 
+  /* Contents */
+  h1.display-4{font-size: 50px; margin: 17px 0 25px 0;}
+  .lead, .table, .lof-list, .ta-list{font-size: 19px; line-height: 26px;}
+  .subtitle{font-size: 25px; margin: 30px 0;}
+  .howto{font-size: 22px; margin: 30px 0 30px 20px;}
+
+  .header_img{width: 100%;}
+
+  /* List */
+  ul.lof-list {margin-left: 20px;}
+  ol.ta-list {margin-left: 25px;}
+
   
   /* Breadcrumbs */
   ol.breadcrumb{margin-top: 20px;}
-  .breadcrumb-item a {font-size: 25px;}
-  .breadcrumb-item+.breadcrumb-item::before {font-size: 25px;}
+  .breadcrumb-item a {font-size: 20px;}
+  .breadcrumb-item+.breadcrumb-item::before {font-size: 20px;}
 
 
 
