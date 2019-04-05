@@ -17,6 +17,9 @@ body {
 .navbar {
   box-shadow: 0px -1px 8px 2px #a7a7a7;
 }
+.logo-text{
+  font-size: 12px; margin-left: 10px;
+}
 .bg-light {
   background-color: #ffffff !important;
 }
@@ -54,18 +57,22 @@ border: 2px solid transparent;
 
 
 /* Breadcrumbs */
+
+.rect{ width: 4px; height: 34px; background-color: #B0B0BB;
+  position: absolute; top: 550px;
+}
 .breadcrumb {
   padding: 1rem 0rem;
   background-color: transparent;
+  margin-top: 20px; margin-left: 20px;
 }
-ol.breadcrumb{margin-top: 20px;}
 .breadcrumb-item a {
   color: #BEBEBE; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; text-decoration: none;
-  font-size: 16px; 
+  font-size: 15px; 
 }
 .breadcrumb-item+.breadcrumb-item::before {
   content: '>'; color: #BEBEBE; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:700; 
-  font-size: 16px; 
+  font-size: 15px; 
 }
 .breadcrumb-item a:hover, .breadcrumb-item a:active, .breadcrumb-item a:focus {
   color: #000000;
@@ -76,20 +83,19 @@ ol.breadcrumb{margin-top: 20px;}
 /* Contents */
 h1.display-4{
   color: #3375DE; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
-  font-size: 35px; margin: 17px 0 25px 0;}
+  font-size: 25px; margin: 17px 0 25px 0;}
 .lead, .table, .lof-list, .ta-list{
   color: #424549; font-family: "Source Sans Pro", sans-serif; font-weight: 400; 
-  font-size: 18px; line-height: 26px;
+  font-size: 18px; line-height: 23px;
 }
 .lead a, .table a, .lof-list a, .ta-list a{color: #3375DE;}
 .subtitle{
   color: #424549; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
-  font-size: 20px;  margin: 30px 0;
+  font-size: 22px;  margin: 30px 0;
 }
 .howto{
-  color: #3375de; font-size: 22px; 
-  font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
-  margin: 30px 0 30px 0px;
+  color: #3375de; font-family: "Source Sans Pro Bold", sans-serif; font-weight: 700;
+  font-size: 18px; margin: 30px 0 30px 0px;
 }
 
 
@@ -182,12 +188,9 @@ table .tb_sns img{width: 28px; height: 28px;}
 .wrap{padding: 0 25px 0 25px; }
 
 /* navigation */
-.navbar{height: 85px;} 
 .logo{width: 40%; height: 40%;}
-.rect{ width: 4px; height: 34px;
-  background-color: #B0B0BB;}
 
-.header_img{}
+
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -200,21 +203,18 @@ table .tb_sns img{width: 28px; height: 28px;}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-  .navbar{height: 100px; height: auto;} 
+  
   
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-
-
-  
-
   /* Layout */
   .container {max-width: 1460px;}
 
   /* Navigation */
+  .navbar{height: 100px; } 
   .logo{width: 100%; height: 100%; }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -222,6 +222,10 @@ table .tb_sns img{width: 28px; height: 28px;}
     padding-left: 1.75rem;
     font-size: 1.25rem;
     font-weight: bold;
+  }
+
+  .logo-text{
+  font-size: 18px;
   }
 
   /* Contents */
@@ -238,11 +242,9 @@ table .tb_sns img{width: 28px; height: 28px;}
 
   
   /* Breadcrumbs */
-  ol.breadcrumb{margin-top: 20px;}
+  ol.breadcrumb{margin-top: 20px; margin-left: 0;}
   .breadcrumb-item a {font-size: 20px;}
   .breadcrumb-item+.breadcrumb-item::before {font-size: 20px;}
-
-
 
 }
 
